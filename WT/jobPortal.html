@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal.com</title>
+    <style>
+        div{
+            display :flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        form{
+            border:2px solid black;
+            margin : 10px;
+            background-color:wheat;
+
+        }
+        .submit{
+            background-color: blue;
+            color:white;
+            border-radius: 4px;
+            width : 200px;
+        }
+        label{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <form>
+            <h2>Job Portal</h2>
+            <label for="firstname">First Name : </label><br>
+            <input type="text" name = "firstname" required><br>
+
+            <label for="middlename">Middle Name:</label><br>
+            <input type="text" name = "middlename"> <br>
+
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name = "lastname" required> <br>
+
+            <label for="address">Address :</label><br>
+            <input type="text" name = "address"> <br>
+
+            <label for="pincode">Pincode : </label><br>
+            <input type="text" name = "pincode" required> <br>
+
+            <label for="mobilenumber">Mobile Number:</label><br>
+            <input type="text" name = "mobilenumber"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name = "email"><br>
+
+            <h4>Select which job role you applying for?</h4>
+            <select name="role" id="role">
+                <option value="webdeveloper">webdeveloper</option>
+                <option value="machinelearning">machinelearning</option>
+                <option value="dsa">DSA</option>
+                <option value="AI">ArtificalIntelligence</option>
+            </select><br>
+            <h4>you previously worked for?</h4>
+            <select name="previouswork" id="previouswork">
+                <option value="dataentry">dataentry</option>
+                <option value="internship">Internship</option>
+                <option value="firstJob">FirstJob</option>
+            </select><br><br>
+
+            <input type="submit" class = 'submit'>
+        </form>
+    </div>
+    
+</body>
+</html>
